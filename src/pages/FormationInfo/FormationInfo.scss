@@ -1,0 +1,153 @@
+.FormationInfo {
+
+    .formationContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding-top: 30px;
+        background-color: var(--primary-color);
+        color: var(--gray-100);
+        padding-bottom: 30px;
+
+        .title {
+
+            h2 {
+
+                font-family: var(--header-style-family);
+                font-size: var(--h1-font-size);
+            }
+        }
+
+        .stageList {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+
+            .item {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+
+                .stageTitle {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    h3 {
+                        text-align: center;
+                        font-family: var(--serif-family);
+                        letter-spacing: 1px;
+                        font-size: var(--h2-font-size);
+                        text-shadow: 2px 4px 2px rgba(0,0,0,0.6);
+                    }
+                }
+
+                .stageBody {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+
+                    img {
+                        width: 300px;
+                        height: 180px;
+                        object-fit: cover;
+                        border-radius: 5px;
+                    }
+
+                    p {
+                        max-width: 300px;
+                        text-align: center;
+                        font-size: var(--normal-font-size);
+                        color: var(--gray-300);
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 350px) {
+
+        .formationContainer {
+
+            .stageList {
+
+                .item {
+
+                    .stageBody {
+
+                        img {
+                            width: 250px;
+                        }
+
+                        p {
+                            max-width: 250px;
+                            font-size: var(--small-font-size);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+
+        .formationContainer {
+
+            .stageList {
+
+                .item {
+                    margin-bottom: 20px;
+
+                    .stageBody {
+                        flex-direction: row;
+                        gap: 50px;
+
+                        &.even {
+                            flex-direction: row-reverse;
+                        }
+
+                        img {}
+
+                        p {}
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        .formationContainer {
+
+            .stageList {
+
+                .item {
+
+                    .stageBody {
+                        gap: 150px;
+
+                        &.even {}
+
+                        img {
+                            width: 400px;
+                            height: 250px;
+                        }
+
+                        p {
+                            font-size: var(--h3-font-size);
+                            color: var(--gray-100);
+                            max-width: 450px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,79 @@
+.vocation {
+    background: linear-gradient(90deg, hsla(0, 0%, 100%, 0.9) 40%, hsla(0, 0%, 100%, 0.9) 100%), url("/img/azfsj-08cd4.avif");
+    background-blend-mode: luminosity;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 50px 0;
+
+    img {
+        width: 100%;
+    }
+
+    button {
+        width: max-content;
+        padding: 10px;
+        border-radius: 4px;
+        border: 2px solid transparent;
+        outline: none;
+        background-color: var(--primary-color);
+        color: var(--gray-100);
+        font-size: var(--normal-font-size);
+        cursor: pointer;
+        transition: all .3s ease;
+        text-transform: capitalize;
+        animation: bounce 1s infinite;
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(10px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        &:hover {
+            border: 2px solid var(--primary-color);
+            background-color: transparent;
+            color: var(--primary-color);
+        }
+    }
+
+    @media screen and (max-width: 350px) {
+        gap: 20px;
+
+        img {}
+    }
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        gap: 20px;
+        padding: 20px;
+        justify-content: space-evenly;
+
+        img {
+            width: 500px;
+            margin-left: -100px;
+        }
+
+    }
+
+    @media screen and (min-width: 1024px) {
+
+        button {
+            width: 200px;
+            padding: 15px;
+            font-size: var(--h2-font-size);
+        }
+    }
+
+}

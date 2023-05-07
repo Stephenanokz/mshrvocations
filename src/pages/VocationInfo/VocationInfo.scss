@@ -1,0 +1,220 @@
+.VocationInfo {
+
+    .vocationContainer {
+        background-color: var(--primary-color);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        padding-bottom: 50px;
+
+        .top {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            color: var(--gray-100);
+            font-size: var(--normal-font-size);
+            width: 100%;
+
+            .info {
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                gap: 20px;
+
+                img {
+                    width: 90%;
+                    border-radius: 5px;
+                    object-fit: cover;
+                }
+            }
+
+            .requirements {
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                gap: 20px;
+                width: 100%;
+                background-color: var(--gray-100);
+                color: var(--gray-900);
+
+                h3 {
+                    font-family: var(--header-style-family);
+                    font-size: var(--h1-font-size);
+                }
+
+                button {
+                    padding: 10px;
+                    width: 150px;
+                    font-size: var(--normal-font-size);
+                    background-color: var(--secondary-color);
+                    border: 2px solid transparent;
+                    outline: none;
+                    color: var(--gray-100);
+                    border-radius: 8px;
+                    transition: all .3s ease;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: var(--secondary-color-dark);
+                        border: 2px solid var(--secondary-color-dark);
+                    }
+                }
+            }
+
+        }
+
+        .bottom {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 20px;
+
+            .title {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                justify-content: center;
+                align-items: center;
+
+                h2 {
+                    color: var(--gray-100);
+                    font-size: var(--big-font-size);
+                    font-family: var(--serif-family);
+                }
+
+                span {
+                    height: 2px;
+                    width: 100%;
+                    color: var(--gray-100);
+                    background-color: var(--gray-100);
+                }
+            }
+
+            .videoList {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                gap: 20px;
+
+                .videoItem {
+                    background-color: var(--primary-color-dark);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+                    padding: 10px;
+                    // height: 200px;
+                    width: 320px;
+                    border-radius: 8px;
+                    box-shadow: 0px 0px 5px 4px hsla(0, 0%, 48%, 0.22);
+                    -webkit-box-shadow: 0px 0px 5px 4px hsla(0, 0%, 0%, 0.182);
+                    -moz-box-shadow: 0px 0px 5px 4px hsla(0, 0%, 48%, 0.22);
+
+
+                    span{
+                        color: var(--gray-100);
+                        font-family: var(--cursive-family);
+                        font-size: var(--h3-font-size);
+                        text-transform: capitalize;
+                    }
+                }
+            }
+
+        }
+    }
+
+    @media screen and (max-width: 350px) {
+        .vocationContainer {
+
+            .bottom {
+
+                .videoList {
+
+                    .videoItem {
+                        width: 250px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+
+        .vocationContainer {
+
+            .top {
+                font-size: var(--h3-font-size);
+
+                .info {
+
+                    p {
+                        max-width: 600px;
+                    }
+
+                    img {
+                        width: 60%;
+                        border-radius: 8px;
+                    }
+                }
+
+                .requirements {
+
+                    p {
+                        max-width: 600px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+
+        .vocationContainer{
+            padding-top: 20px;
+            gap: 50px;
+
+            .top{
+                flex-direction: row;
+                padding: 0 30px;
+
+                .info,.requirements{
+                    width: 50%;
+                }
+
+                .requirements{
+                    padding: 50px 0;
+                }
+            }
+
+            .bottom{
+                gap: 50px;
+
+                .videoList{
+
+                    .videoItem{
+                        height: auto;
+                        width: 480px;
+
+                        span{
+                            font-size: var(--h2-font-size);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,99 @@
+.Apostolate {
+
+    .apostolateContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        // background-color: var(--primary-color);
+        padding: 20px;
+
+        h2 {
+            font-size: var(--h1-font-size);
+            color: var(--gray-900);
+            text-transform: capitalize;
+            font-weight: var(--font-semi-bold);
+        }
+
+        img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .desc {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-size: var(--normal-font-size);
+
+            p {
+                text-align: justify;
+                color: var(--gray-700);
+
+                &:nth-child(2) {
+                    font-weight: var(--font-semi-bold);
+                }
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                color: var(--gray-700);
+
+                li {
+                    list-style-type: circle;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 350px) {
+
+        .apostolateContainer {
+
+            img {
+                width: 250px;
+                height: 180px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .apostolateContainer {
+
+            img {
+                width: 380px;
+                height: 230px;
+            }
+
+            .desc {
+                max-width: 650px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+
+        .apostolateContainer {
+
+            img {
+                width: 600px;
+                height: 300px;
+            }
+
+            .desc {
+                max-width: 850px;
+                font-size: var(--h3-font-size);
+
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+}

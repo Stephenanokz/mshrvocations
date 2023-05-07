@@ -1,0 +1,116 @@
+:root{
+    --primary-color: hsl(225, 82%, 46%);
+    --primary-color-light: hsl(225, 65%, 64%);
+    --primary-color-dark: hsl(225, 100%, 22%);
+    --secondary-color: hsl(357, 75%, 52%);
+    --secondary-color-light: hsl(357, 63%, 67%);
+    --secondary-color-dark: hsl(357, 69%, 32%);
+    --accent-color: hsl(55, 100%, 68%);
+    --accent-color-light: hsl(55, 96%, 73%);
+    --accent-color-dark: hsl(55, 62%, 45%);
+    --gray-100:  hsl(0, 0%, 100%);
+    --gray-300:  hsl(240, 27%, 94%);
+    --gray-500:  hsl(247, 7%, 46%);
+    --gray-700:  hsl(244, 19%, 16%);
+    --gray-900:  hsl(232, 100%, 7%);
+    --black-light:  rgb(25, 25, 25);
+    --black-dark:  rgb(0, 0, 0);
+  
+    --header-height: 3.5rem;
+  
+    --biggest-font-size: 2.75rem;
+    --big-font-size: 1.75rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+  
+    --font-regular: 300;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 800;
+  
+    --serif-family: 'Playfair Display', serif;
+    --cursive-family: 'Courgette', cursive;
+    --sans-family: 'Lato', sans-serif;
+    --bold-cursive-family: 'Righteous', cursive;
+    --header-style-family: 'Kurale', serif;
+    --drip-family: 'Nosifer', cursive;
+  
+    --z-tooltip: 10;
+    --z-fixed: 100;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: var(--sans-family);
+  }
+  
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+
+  .app{
+    width: 100%;
+    height: auto;
+  }
+
+  .loading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: var(--h1-font-size);
+    font-weight: bold;
+    background-color: var(--primary-color);
+    color: var(--gray-100);
+  }
+  
+  .loading__inline{
+    text-align: center;
+    font-size: var(--h3-font-size);
+    // color: inherit;
+    font-weight: bold;
+    padding: 10px;
+    background-color: inherit;
+
+  }
+  
+  /* width and height of the scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+  }
+  
+  /* background color of the scrollbar */
+  ::-webkit-scrollbar-track {
+    background: var(--primary-color);
+  }
+  
+  /* color of the scrollbar thumb */
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-color);
+    border-radius: 50px;
+    transition: all .2s ease;
+  }
+  
+  /* color of the scrollbar thumb on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--secondary-color-dark);
+  }

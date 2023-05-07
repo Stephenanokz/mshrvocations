@@ -1,0 +1,45 @@
+.banner {
+    // margin-top: 70px;
+    padding: 20px;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, hsla(232, 100%, 7%, 0.875) 40%, hsla(232, 100%, 7%, 0.875) 100%), url("https://www.lpj.org/cached_uploads/full/2022/12/26/de-4-2-1672065345.jpg?_mhk=0b4a1792b2b9dc35e3984fb85977e26f03e17e4dbe95f897879a7bc4a7539f429ab76140156af51a525d063995f67fca");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom center;
+    color: var(--gray-100);
+    gap: 20px;
+
+    .title {
+        font-size: var(--big-font-size);
+        font-weight: var(--font-bold);
+        font-family: var(--serif-family);
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .subtitle {
+        text-transform: capitalize;
+        font-style: italic;
+        font-size: var(--normal-font-size);
+        text-align: center;
+    }
+
+    @media screen and (min-width: 768px) {
+        .title {
+            font-size: var(--biggest-font-size);
+        }
+
+        .subtitle {
+            font-size: var(--h2-font-size);
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        height: 50vh;
+    }
+}

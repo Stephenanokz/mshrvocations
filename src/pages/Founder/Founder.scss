@@ -1,0 +1,144 @@
+.founder {
+
+    .founderContainer {
+        background-color: var(--primary-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        padding: 50px 0;
+
+        .image {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            img {
+                width: 50%;
+                height: 250px;
+                object-fit: cover;
+                border-radius: 5px;
+
+                &.desktop {
+                    display: none;
+                }
+            }
+
+            span {
+                color: var(--gray-100);
+                font-size: var(--h3-font-size);
+            }
+        }
+
+        .bioList {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            padding: 10px;
+
+            .bioItem {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                h3 {
+                    color: var(--gray-100);
+                    font-family: var(--header-style-family);
+                    font-size: var(--h2-font-size);
+                    border-left: 3px solid var(--secondary-color);
+                    padding-left: 15px;
+                }
+
+                div {
+
+                    p {
+                        font-size: var(--normal-font-size);
+                        color: var(--gray-300);
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 350px) {
+
+        .founderContainer {
+
+            .image {
+
+                img {
+                    height: 200px;
+                }
+            }
+
+            .bioList {
+
+                .bioItem {
+
+                    h3 {
+                        font-size: var(--h3-font-size);
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+
+        .founderContainer {
+
+            .image {
+
+                img {
+                    width: 30%;
+                    height: 280px;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        .founderContainer {
+
+            .image {
+
+                img {
+
+                    &.mobile {
+                        display: none;
+                    }
+
+                    &.desktop {
+                        display: block;
+                    }
+                }
+
+                span{
+                    font-size: var(--h2-font-size);
+                    font-weight: var(--font-semi-bold);
+                }
+            }
+
+            .bioList {
+                padding: 10px 50px;
+
+                .bioItem {
+
+                    h3 {
+                        font-size: var(--h1-font-size);
+                    }
+                    
+                    p{
+                        font-size: var(--h3-font-size);
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
