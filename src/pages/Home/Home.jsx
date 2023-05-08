@@ -11,7 +11,6 @@ import axios from "axios";
 
 const Home = () => {
   const [carouselImages, setCarouselImages] = useState([]);
-  const [posts, setPosts] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const axiosInstance = axios.create({
     baseURL: import.meta.env.VITE_REACT_APP_API_BASEURL,
@@ -34,23 +33,6 @@ const Home = () => {
       setIsLoading(false);
     };
     getCarouselImages();
-
-    //Fetch Posts
-    const getPosts = async () => {
-      try {
-        setIsLoading(true);
-        const res = await axiosInstance.get("posts", {
-          headers: {
-            token: `Bearer ${import.meta.env.VITE_REACT_APP_JWT_TOKEN}`,
-          },
-        });
-        setPosts(res.data);
-      } catch (error) {
-        console.log(error);
-      }
-      setIsLoading(false);
-    };
-    getPosts();
   }, []);
 
   return isLoading ? (
@@ -62,8 +44,7 @@ const Home = () => {
       <Vocation />
       <Formation />
       <Apostolates />
-      {/* Gallery */}
-      <Blog posts={posts} />
+      <Blog />
       <Contact />
     </div>
   );

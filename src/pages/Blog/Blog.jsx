@@ -1,18 +1,44 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Blog.scss";
 import { Link } from "react-router-dom";
 import ThumbUpOutlinedIcon from "@mui/icons-material/ThumbUpOutlined";
 import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
 import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
+import axios from "axios";
 
-const Blog = ({ posts }) => {
-  // const [filteredPosts, setFilteredPosts] = useState([]);
+const Blog = () => {
+  const [posts, setPosts] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const axiosInstance = axios.create({
+    baseURL: import.meta.env.VITE_REACT_APP_API_BASEURL,
+  });
+
+  useEffect(() => {
+    const getPosts = async () => {
+      try {
+        setIsLoading(true);
+        const res = await axiosInstance.get("posts", {
+          headers: {
+            token: `Bearer ${import.meta.env.VITE_REACT_APP_JWT_TOKEN}`,
+          },
+        });
+        setPosts(res.data);
+      } catch (error) {
+        console.log(error);
+      }
+      setIsLoading(false);
+    };
+    getPosts();
+  }, []);
+
   const filteredPosts = posts.slice(0, 2);
 
   const truncateString = (string = "", maxLength = 50) =>
     string.length > maxLength ? `${string.substring(0, maxLength)} …` : string;
 
-  return (
+  return isLoading ? (
+    <div className="loading__inline">Loading...</div>
+  ) : (
     <div data-aos="fade-up" data-aos-duration="1000" className="blog" id="blog">
       <div data-aos="fade-down" data-aos-duration="1000" className="top">
         <span className="title">News & Events</span>
@@ -29,7 +55,9 @@ const Blog = ({ posts }) => {
                 <span className="title">{post?.title}</span>
                 <span className="body">{truncateString(post.body, 200)}</span>
                 <div className="utils">
-                  <span className="left">{post.updatedAt.slice(0,10)} | 3 min read</span>
+                  <span className="left">
+                    {post.updatedAt.slice(0, 10)} | 3 min read
+                  </span>
                   {/* <div className="right">
                 <ThumbUpOutlinedIcon className="icon" />
                 <ChatBubbleOutlineOutlinedIcon className="icon" />
