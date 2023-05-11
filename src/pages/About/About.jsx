@@ -49,10 +49,12 @@ const About = () => {
           </div>
         </div>
         <div data-aos="fade-up" data-aos-duration="1000" className="right">
-          <img src="/img/ad28l-9suyc.avif" alt="congregational leader" />
+          <img
+            src="https://ik.imagekit.io/stephenanokz98/o/imgs%2Fad28l-9suyc.avif?alt=media&token=49644667-6d4f-4ddd-ab7c-47f35b30ac8b"
+            alt="congregational leader"
+          />
         </div>
       </div>
-      
     </div>
   );
 };

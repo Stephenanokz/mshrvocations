@@ -12,12 +12,12 @@ const Founder = () => {
       <div className="founderContainer">
         <div data-aos="fade-up" data-aos-duration="1000" className="image">
           <img
-            src="/img/av7vq-rmio9.avif"
+            src="https://ik.imagekit.io/stephenanokz98/o/imgs%2Fav7vq-rmio9.avif?alt=media&token=5d3c996e-2b9a-4452-9d55-288ba122aa3d"
             alt=""
             className="mobile"
           />
           <img
-            src="/img/a268y-ppobi.avif"
+            src="https://ik.imagekit.io/stephenanokz98/o/imgs%2Fa268y-ppobi.avif?alt=media&token=44c88571-ac90-4b60-a2a5-131ea84210ff"
             alt=""
             className="desktop"
           />

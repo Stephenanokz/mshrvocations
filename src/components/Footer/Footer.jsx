@@ -112,23 +112,35 @@ const Footer = () => {
           </div>
           <div className="featured">
             <div className="featItem">
-              <img src="/img/vatican.png" alt="" />
+              <img
+                src="https://ik.imagekit.io/stephenanokz98/o/imgs%2Fvatican.png?alt=media&token=cf1b7c67-8576-40fa-8838-200cf30719ae"
+                alt=""
+              />
               <Link to="http://www.vatican.va/">Vatican Website</Link>
             </div>
             <div className="featItem">
-              <img src="/img/ewtn.png" alt="" />
+              <img
+                src="https://ik.imagekit.io/stephenanokz98/o/imgs%2Fewtn.png?alt=media&token=f56c17ee-c34c-486a-b9b9-2181d38f51b3"
+                alt=""
+              />
               <Link to="http://www.ewtn.com/">
                 EWTN Global Catholic Network
               </Link>
             </div>
             <div className="featItem">
-              <img src="/img/universalis.png" alt="" />
+              <img
+                src="https://ik.imagekit.io/stephenanokz98/o/imgs%2Funiversalis.png?alt=media&token=088556ea-4fb8-4680-92a6-b5e2eb870fd5"
+                alt=""
+              />
               <Link to="http://www.universalis.com/today.htm">
                 Daily Readings and Office
               </Link>
             </div>
             <div className="featItem">
-              <img src="/img/cnsn.png" alt="" />
+              <img
+                src="https://ik.imagekit.io/stephenanokz98/o/imgs%2Fcnsn.png?alt=media&token=1dde8aaf-87aa-43be-90ef-d0df74d63ece"
+                alt=""
+              />
               <Link to="http://www.cnsng.org/">
                 Catholic News Service of Nigeria
               </Link>
@@ -148,7 +160,10 @@ const Footer = () => {
               <span className="title">
                 The Missionary of Sisters of the Holy Rosary
               </span>
-              <img src="/img/LOGO1.png" alt="" />
+              <img
+                src="https://ik.imagekit.io/stephenanokz98/o/imgs%2FLOGO1.png?alt=media&token=7e16973d-39e2-462e-9f90-1a3404424520"
+                alt=""
+              />
             </div>
             <div className="footerContact">
               <span>

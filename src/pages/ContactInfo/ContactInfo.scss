@@ -59,21 +59,21 @@
                     font-size: 1.15rem;
 
                     &.africa {
-                        background: linear-gradient(90deg, hsla(232, 100%, 7%, 0.875) 40%, hsla(232, 100%, 7%, 0.875) 100%), url("/img/avtl9-ibuc6.avif");
+                        background: linear-gradient(90deg, hsla(232, 100%, 7%, 0.875) 40%, hsla(232, 100%, 7%, 0.875) 100%), url("https://ik.imagekit.io/stephenanokz98/o/imgs%2Favtl9-ibuc6.avif?alt=media&token=9ea49913-7a2b-4ddb-b80b-469a139f91d6");
                         background-size: cover;
                         background-position: center;
 
                     }
 
                     &.europe {
-                        background: linear-gradient(90deg, hsla(232, 100%, 7%, 0.875) 40%, hsla(232, 100%, 7%, 0.875) 100%), url("/img/aex96-w84np.avif");
+                        background: linear-gradient(90deg, hsla(232, 100%, 7%, 0.875) 40%, hsla(232, 100%, 7%, 0.875) 100%), url("https://ik.imagekit.io/stephenanokz98/o/imgs%2Faex96-w84np.avif?alt=media&token=b89f1fab-0d70-4d75-97ab-e6745eaf4f84");
                         background-size: cover;
                         background-position: center;
 
                     }
 
                     &.america {
-                        background: linear-gradient(90deg, hsla(232, 100%, 7%, 0.875) 40%, hsla(232, 100%, 7%, 0.875) 100%), url("/img/ay5xo-fj83w.avif");
+                        background: linear-gradient(90deg, hsla(232, 100%, 7%, 0.875) 40%, hsla(232, 100%, 7%, 0.875) 100%), url("https://ik.imagekit.io/stephenanokz98/o/imgs%2Fay5xo-fj83w.avif?alt=media&token=c5922841-3f25-477c-96c7-412abf0a09d5");
                         background-size: cover;
                         background-position: center;
 
@@ -105,10 +105,10 @@
                         color: var(--gray-100);
                         text-align: center;
 
-                        a{
+                        a {
                             transition: all .3s ease;
 
-                            &:hover{
+                            &:hover {
                                 color: var(--secondary-color);
                             }
                         }
@@ -314,8 +314,7 @@
                     .right {
                         gap: 12px;
 
-                        span {
-                        }
+                        span {}
                     }
                 }
             }

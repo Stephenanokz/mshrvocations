@@ -8,30 +8,49 @@ const AboutInfo = () => {
     <div className="AboutInfo">
       <Banner title="About Us" subTitle="Learn Much More About us" />
       <div className="aboutContainer">
-        <div data-aos="fade-up" data-aos-duration="1000" className="aboutInfoItem founder">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="aboutInfoItem founder"
+        >
           <div data-aos="fade-down" data-aos-duration="1000" className="title">
             <span>Our Founder</span>
           </div>
           <div className="content">
             <div className="image">
-              <img src="/img/av7vq-rmio9.avif" alt="" className="mobile" />
-              <img src="/img/a268y-ppobi.avif" alt="" className="desktop" />
+              <img
+                src="https://ik.imagekit.io/stephenanokz98/o/imgs%2Fav7vq-rmio9.avif?alt=media&token=5d3c996e-2b9a-4452-9d55-288ba122aa3d"
+                alt=""
+                className="mobile"
+              />
+              <img
+                src="https://ik.imagekit.io/stephenanokz98/o/imgs%2Fa268y-ppobi.avif?alt=media&token=44c88571-ac90-4b60-a2a5-131ea84210ff"
+                alt=""
+                className="desktop"
+              />
             </div>
             <div className="body">
               <span>Bishop Joseph Shanahan</span>
               <Link to="/about/founder">
-              <button>More About Our Founder</button>
+                <button>More About Our Founder</button>
               </Link>
             </div>
           </div>
         </div>
-        <div data-aos="fade-up" data-aos-duration="1000" className="aboutInfoItem wwa">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="aboutInfoItem wwa"
+        >
           <div data-aos="fade-down" data-aos-duration="1000" className="title">
             <span>Who We Are</span>
           </div>
           <div className="content">
             <div className="image">
-              <img src="/img/a40jj-pvl86.avif" alt="" />
+              <img
+                src="https://ik.imagekit.io/stephenanokz98/o/imgs%2Fa40jj-pvl86.avif?alt=media&token=5106ad4b-53ef-4851-bd2b-9d28d9e27d72"
+                alt=""
+              />
               <span>Some of our holy rosary sisters</span>
             </div>
             <div className="body">
@@ -52,13 +71,20 @@ const AboutInfo = () => {
             </div>
           </div>
         </div>
-        <div data-aos="fade-up" data-aos-duration="1000" className="aboutInfoItem mission">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="aboutInfoItem mission"
+        >
           <div data-aos="fade-down" data-aos-duration="1000" className="title">
             <span>Our Mission</span>
           </div>
           <div className="content">
             <div className="image">
-              <img src="/img/avt18-9ab7x.avif" alt="" />
+              <img
+                src="https://ik.imagekit.io/stephenanokz98/o/imgs%2Favt18-9ab7x.avif?alt=media&token=f7b96b81-eb81-4ccb-91ce-86cbfddcac65"
+                alt=""
+              />
               <span>Our community outreach/response program</span>
             </div>
             <div className="body">
@@ -73,13 +99,20 @@ const AboutInfo = () => {
             </div>
           </div>
         </div>
-        <div data-aos="fade-up" data-aos-duration="1000" className="aboutInfoItem vision">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="aboutInfoItem vision"
+        >
           <div data-aos="fade-down" data-aos-duration="1000" className="title">
             <span>Our Vision</span>
           </div>
           <div className="content">
             <div className="image">
-              <img src="/img/ax0ch-vi6gl.avif" alt="" />
+              <img
+                src="https://ik.imagekit.io/stephenanokz98/o/imgs%2Fax0ch-vi6gl.avif?alt=media&token=25a977e0-1dbe-4573-b6e7-58d63a99068d"
+                alt=""
+              />
               <span>One of our sisters with some young ladies</span>
             </div>
             <div className="body">
@@ -92,13 +125,20 @@ const AboutInfo = () => {
             </div>
           </div>
         </div>
-        <div data-aos="fade-up" data-aos-duration="1000" className="aboutInfoItem charism">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="aboutInfoItem charism"
+        >
           <div data-aos="fade-down" data-aos-duration="1000" className="title">
             <span>Charism</span>
           </div>
           <div className="content">
             <div className="image">
-              <img src="/img/ai7hi-roj7d.avif" alt="" />
+              <img
+                src="https://ik.imagekit.io/stephenanokz98/o/imgs%2Fai7hi-roj7d.avif?alt=media&token=2f130a5a-f0df-4966-9ae7-d3cb840d9f55"
+                alt=""
+              />
               <span>
                 Readiness to work is our great heritage from our founder
               </span>
@@ -126,13 +166,20 @@ const AboutInfo = () => {
             </div>
           </div>
         </div>
-        <div data-aos="fade-up" data-aos-duration="1000" className="aboutInfoItem spirituality">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="aboutInfoItem spirituality"
+        >
           <div data-aos="fade-down" data-aos-duration="1000" className="title">
             <span>Spirituality</span>
           </div>
           <div className="content">
             <div className="image">
-              <img src="/img/alqnv-31i13.avif" alt="" />
+              <img
+                src="https://ik.imagekit.io/stephenanokz98/o/imgs%2Falqnv-31i13.avif?alt=media&token=95b80d15-4f38-4367-a23c-8f3eabfef0df"
+                alt=""
+              />
               <span>
                 The Celebration of the Eucharist is at the heart of our prayer
                 as a worshiping community.

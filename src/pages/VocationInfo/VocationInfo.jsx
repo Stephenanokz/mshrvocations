@@ -39,7 +39,10 @@ const VocationInfo = () => {
       <div className="vocationContainer">
         <div className="top">
           <div data-aos="fade-up" data-aos-duration="1000" className="info">
-            <img src="/img/afnku-x1g5b.avif" alt="" />
+            <img
+              src="https://ik.imagekit.io/stephenanokz98/o/imgs%2Fafnku-x1g5b.avif?alt=media&token=cadbbc69-b557-4884-a027-1791b304ecbb"
+              alt=""
+            />
             <p>
               We are the Missionary Sisters of the holy Rosary, an international
               and inter-cultural congregation of women founded in 1924 by an

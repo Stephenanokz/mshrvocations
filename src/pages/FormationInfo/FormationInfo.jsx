@@ -19,7 +19,10 @@ const FormationInfo = () => {
               <h3>Aspirancy</h3>
             </div>
             <div className="stageBody">
-              <img src="/img/ayvgd-t0byv.avif" alt="aspirancy" />
+              <img
+                src="https://ik.imagekit.io/stephenanokz98/o/imgs%2Fayvgd-t0byv.avif?alt=media&token=37861741-100c-4eb9-86f6-452531d55888"
+                alt="aspirancy"
+              />
               <p>
                 This is the stage of invitation and contact with interested
                 young women, who has some sense of being called by God to
@@ -36,7 +39,10 @@ const FormationInfo = () => {
               <h3>Pre-candidacy</h3>
             </div>
             <div className="stageBody even">
-              <img src="/img/asnox-4ftiw.avif" alt="pre-candidacy" />
+              <img
+                src="https://ik.imagekit.io/stephenanokz98/o/imgs%2Fasnox-4ftiw.avif?alt=media&token=3fa61183-78d1-4aa6-bc38-452adce994a3"
+                alt="pre-candidacy"
+              />
               <p>
                 This period provides opportunity for serious discernment and it
                 lasts for one year. The person must either be working or
@@ -50,7 +56,10 @@ const FormationInfo = () => {
               <h3>Candidacy</h3>
             </div>
             <div className="stageBody">
-              <img src="/img/ajhwx-cjbjk.avif" alt="candidacy" />
+              <img
+                src="https://ik.imagekit.io/stephenanokz98/o/imgs%2Fajhwx-cjbjk.avif?alt=media&token=e37bd992-1d7a-453a-ad71-2f1069661308"
+                alt="candidacy"
+              />
               <p>
                 This is the time of formal entrance into the life of our
                 congregation and it lasts for two years in our candidacy house.
@@ -64,7 +73,10 @@ const FormationInfo = () => {
               <h3>Novitiate</h3>
             </div>
             <div className="stageBody even">
-              <img src="/img/awntv-ufcmp.avif" alt="novitiate" />
+              <img
+                src="https://ik.imagekit.io/stephenanokz98/o/imgs%2Fawntv-ufcmp.avif?alt=media&token=e3af8b35-f153-4cf1-ae3a-7f35212b8f4b"
+                alt="novitiate"
+              />
               <p>
                 This is two years of intense formation on prayers, study,
                 community living and apostolate, sharing in the daily life and
@@ -78,7 +90,10 @@ const FormationInfo = () => {
               <h3>First Profession</h3>
             </div>
             <div className="stageBody">
-              <img src="/img/agy8f-hwrsc.avif" alt="first profession" />
+              <img
+                src="https://ik.imagekit.io/stephenanokz98/o/imgs%2Fagy8f-hwrsc.avif?alt=media&token=22fddb3c-b9d2-4429-8502-889eb8935c2b"
+                alt="first profession"
+              />
               <p>
                 This is made between five and nine years of first profession
                 when one has gained experience of missionary religious life.
@@ -90,7 +105,10 @@ const FormationInfo = () => {
               <h3>Final Profession</h3>
             </div>
             <div className="stageBody even">
-              <img src="/img/abyb8-ehqki.avif" alt="final profession" />
+              <img
+                src="https://ik.imagekit.io/stephenanokz98/o/imgs%2Fabyb8-ehqki.avif?alt=media&token=960e70c3-b678-4810-b4a6-8ad9e2824401"
+                alt="final profession"
+              />
               <p>
                 Vows of poverty, consecrated celibacy and obedience admits a
                 person to the life and work of the congregation. The Sister
@@ -105,7 +123,10 @@ const FormationInfo = () => {
               <h3>On -going Formation</h3>
             </div>
             <div className="stageBody">
-              <img src="/img/azdhk-q1adb.avif" alt="on-going formation" />
+              <img
+                src="https://ik.imagekit.io/stephenanokz98/o/imgs%2Fazdhk-q1adb.avif?alt=media&token=0f89b701-8c76-4c27-baff-1e1311f895c2"
+                alt="on-going formation"
+              />
               <p>
                 Vows of poverty, consecrated celibacy and obedience admits a
                 person to the life and work of the congregation. The Sister
