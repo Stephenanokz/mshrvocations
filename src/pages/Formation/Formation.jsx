@@ -22,7 +22,7 @@ const Formation = () => {
         <div data-aos="fade-left" data-aos-duration="1000">
           <p>
             This is the stage of invitation and contact with interested young
-            women, who has some sense of being called by God to missionary life
+            women, who have some sense of being called by God to missionary life
             among the poor, to ...
           </p>
           <Link to="/formation">

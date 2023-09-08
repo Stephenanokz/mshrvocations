@@ -25,7 +25,7 @@ const FormationInfo = () => {
               />
               <p>
                 This is the stage of invitation and contact with interested
-                young women, who has some sense of being called by God to
+                young women, who have some sense of being called by God to
                 missionary life among the poor, to explore other ways of service
                 within the Christian vocation. If she is still studying, she is
                 encouraged to continue, while she maintains correspondence with,
@@ -62,7 +62,7 @@ const FormationInfo = () => {
               />
               <p>
                 This is the time of formal entrance into the life of our
-                congregation and it lasts for two years in our candidacy house.
+                Congregation and it lasts for two years in our candidacy house.
                 It is a time of deepening one’s knowledge of Christian life
                 while discerning where God is leading.
               </p>
