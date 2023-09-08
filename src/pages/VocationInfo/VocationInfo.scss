@@ -33,6 +33,25 @@
                     border-radius: 5px;
                     object-fit: cover;
                 }
+
+                a {
+                    color: var(--accent-color);
+                    animation: pulsate 2s ease 0s infinite;
+                }
+
+                @keyframes pulsate {
+                    0% {
+                        transform: scale(1);
+                    }
+
+                    50% {
+                        transform: scale(1.2);
+                    }
+
+                    100% {
+                        transform: scale(1);
+                    }
+                }
             }
 
             .requirements {
@@ -125,7 +144,7 @@
                     -moz-box-shadow: 0px 0px 5px 4px hsla(0, 0%, 48%, 0.22);
 
 
-                    span{
+                    span {
                         color: var(--gray-100);
                         font-family: var(--cursive-family);
                         font-size: var(--h3-font-size);
@@ -183,33 +202,38 @@
 
     @media screen and (min-width: 1024px) {
 
-        .vocationContainer{
+        .vocationContainer {
             padding-top: 20px;
             gap: 50px;
 
-            .top{
+            .top {
                 flex-direction: row;
                 padding: 0 30px;
 
-                .info,.requirements{
+                .info,
+                .requirements {
                     width: 50%;
+
+                    p {
+                        text-align: justify;
+                    }
                 }
 
-                .requirements{
+                .requirements {
                     padding: 50px 0;
                 }
             }
 
-            .bottom{
+            .bottom {
                 gap: 50px;
 
-                .videoList{
+                .videoList {
 
-                    .videoItem{
+                    .videoItem {
                         height: auto;
                         width: 480px;
 
-                        span{
+                        span {
                             font-size: var(--h2-font-size);
                         }
                     }

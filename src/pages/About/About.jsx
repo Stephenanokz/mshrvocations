@@ -43,9 +43,9 @@ const About = () => {
               <p className="name">Sr. Franca Onyibor,</p>
               <p className="title">Congregational Leader</p>
             </div>
-            <Link to="/about">
+            {/* <Link to="/about">
               <button className="aboutMore">More About Us</button>
-            </Link>
+            </Link> */}
           </div>
         </div>
         <div data-aos="fade-up" data-aos-duration="1000" className="right">

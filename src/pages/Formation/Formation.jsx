@@ -12,7 +12,7 @@ const Formation = () => {
         </span>
       </div>
       <div className="bottom">
-        <div data-aos="fade-right" data-aos-duration="1000">
+        <div className="imageContainer" data-aos="fade-right" data-aos-duration="1000">
           <h3>Aspirancy</h3>
           <img
             src="https://ik.imagekit.io/stephenanokz98/o/imgs%2Fayvgd-t0byv.avif?alt=media&token=37861741-100c-4eb9-86f6-452531d55888"

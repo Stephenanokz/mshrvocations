@@ -84,7 +84,7 @@ const Footer = () => {
       <NewsTicker news={quotes} />
       <div className="footer">
         <div className="top">
-          <div className="links">
+          {/* <div className="links">
             <Link to="/">
               <span>Home</span>
             </Link>
@@ -109,50 +109,59 @@ const Footer = () => {
             <Link to="/contact">
               <span>Contact Us</span>
             </Link>
-          </div>
+          </div> */}
           <div className="featured">
+            <div className="featItem">
+              <img
+                src="https://ik.imagekit.io/stephenanokz98/o/imgs%2FLOGO1.png?alt=media&token=7e16973d-39e2-462e-9f90-1a3404424520"
+                alt=""
+              />
+              <a target="_blank" href="https://www.mshr.org/">
+                MSHR Main Website
+              </a>
+            </div>
             <div className="featItem">
               <img
                 src="https://ik.imagekit.io/stephenanokz98/o/imgs%2Fvatican.png?alt=media&token=cf1b7c67-8576-40fa-8838-200cf30719ae"
                 alt=""
               />
-              <Link to="http://www.vatican.va/">Vatican Website</Link>
+              <a target="_blank" href="https://www.vatican.va/">Vatican Website</a>
             </div>
             <div className="featItem">
               <img
                 src="https://ik.imagekit.io/stephenanokz98/o/imgs%2Fewtn.png?alt=media&token=f56c17ee-c34c-486a-b9b9-2181d38f51b3"
                 alt=""
               />
-              <Link to="http://www.ewtn.com/">
+              <a target="_blank" href="https://www.ewtn.com/">
                 EWTN Global Catholic Network
-              </Link>
+              </a>
             </div>
             <div className="featItem">
               <img
                 src="https://ik.imagekit.io/stephenanokz98/o/imgs%2Funiversalis.png?alt=media&token=088556ea-4fb8-4680-92a6-b5e2eb870fd5"
                 alt=""
               />
-              <Link to="http://www.universalis.com/today.htm">
+              <a target="_blank" href="https://www.universalis.com/today.htm">
                 Daily Readings and Office
-              </Link>
+              </a>
             </div>
             <div className="featItem">
               <img
                 src="https://ik.imagekit.io/stephenanokz98/o/imgs%2Fcnsn.png?alt=media&token=1dde8aaf-87aa-43be-90ef-d0df74d63ece"
                 alt=""
               />
-              <Link to="http://www.cnsng.org/">
+              <a target="_blank" href="https://www.cnsng.org/">
                 Catholic News Service of Nigeria
-              </Link>
+              </a>
             </div>
           </div>
-          <div className="support">
+          {/* <div className="support">
             <h3>Support Us</h3>
             <span>Help Us Change the Lives of People around the World</span>
             <Link to="/donate">
               <button>Donate</button>
             </Link>
-          </div>
+          </div> */}
         </div>
         <div className="bottom">
           <div className="info">
@@ -168,7 +177,7 @@ const Footer = () => {
             <div className="footerContact">
               <span>
                 P. 0. Box 9677, Independence Layout, Enugu | +234 705 5159 331 |
-                mshrvocations@yahoo.com{" "}
+                holyrosaryvocations99@gmail.com{" "}
               </span>
             </div>
           </div>
@@ -183,7 +192,7 @@ const Footer = () => {
                 <InstagramIcon className="icon" />
               </span>
             </Link>
-            <Link to="https://www.linkedin.com/in/holy-rosary-sisters-a3837826a/">
+            {/* <Link to="https://www.linkedin.com/in/holy-rosary-sisters-a3837826a/">
               <span>
                 <LinkedInIcon className="icon" />
               </span>
@@ -197,7 +206,7 @@ const Footer = () => {
               <span>
                 <TikTokIcon color="#8a191f" className="icon" />
               </span>
-            </Link>
+            </Link> */}
             <Link to="https://wa.me/2347055159331">
               <span>
                 <WhatsAppIcon className="icon" />
@@ -210,7 +219,10 @@ const Footer = () => {
             </Link>
           </div>
           <div className="copyright">
-            <span>© 2023 Sisters of the Holy Rosary Province of Nigeria</span>
+            <span>
+              <a href="https://mshrvocationsadmin.onrender.com/">©</a> 2023
+              Sisters of the Holy Rosary Province of Nigeria
+            </span>
             <span>Developed by Verbum Networks, Enugu.</span>
           </div>
         </div>

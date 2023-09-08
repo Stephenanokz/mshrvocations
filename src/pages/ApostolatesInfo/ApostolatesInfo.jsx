@@ -36,7 +36,7 @@ const ApostolatesInfo = () => {
     <div className="ApostolatesInfo">
       <Banner
         title="Our Apostolates"
-        subTitle="We engage in diverse services in different works of life"
+        subTitle="We engage in diverse services in different walks of life"
       />
       {isLoading ? (
         <div className="loading__inline">Loading...</div>

@@ -34,7 +34,7 @@ const VocationInfo = () => {
     <div className="VocationInfo">
       <Banner
         title="Vocation"
-        subTitle='"When the lord calls, so must we answer"'
+        subTitle='"Here I am Lord, I come to do your will"'
       />
       <div className="vocationContainer">
         <div className="top">
@@ -55,6 +55,7 @@ const VocationInfo = () => {
               Education, Social, Youth Development, Gender Awareness, Pastoral,
               Working with Refugees and People living with HIV
             </p>
+            <Link to="/formation">Click to see the steps to discernment</Link>
           </div>
           <div
             data-aos="fade-up"

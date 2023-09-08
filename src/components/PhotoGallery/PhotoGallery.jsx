@@ -135,6 +135,7 @@ const Gallery = () => {
                 alt={image?.category}
                 className="gallery-image"
                 onClick={() => handleImageClick(image)}
+                title="Click to expand"
               />
             ))}
           </div>

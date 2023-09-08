@@ -56,14 +56,77 @@
             &.founder {
 
                 .content {
+                    .left {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        align-items: center;
 
-                    .image {
+                        .image {
 
-                        img {
                             width: 50%;
-
-                            &.desktop {
-                                display: none;
+                            img {
+    
+                                &.desktop {
+                                    display: none;
+                                }
+                            }
+                        }
+    
+                        .body {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 20px;
+                            color: var(--gray-100);
+    
+                            p {
+                                text-align: center;
+                                font-size: var(--normal-font-size);
+                            }
+    
+                            span {
+                                text-align: center;
+                            }
+                        }
+                    }
+    
+                    .right {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 20px;
+    
+                        .textContent{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+                            align-items: center;
+    
+                            p{
+                                color: var(--gray-100);
+                                text-align: center;
+                            }
+                        }
+    
+                        button {
+                            width: max-content;
+                            padding: 10px;
+                            border-radius: 4px;
+                            border: 2px solid transparent;
+                            outline: none;
+                            background-color: var(--gray-100);
+                            color: var(--primary-color);
+                            font-size: var(--normal-font-size);
+                            cursor: pointer;
+                            transition: all .3s ease;
+    
+                            &:hover {
+                                border: 2px solid var(--gray-300);
+                                background-color: var(--gray-300);
+                                color: var(--gray-900);
                             }
                         }
                     }
@@ -89,44 +152,45 @@
                 align-items: center;
                 gap: 20px;
 
-                .image {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 10px;
+                    .image {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
 
-                    img {
-                        width: 100%;
-                        height: 200px;
-                        object-fit: cover;
-                        border-radius: 5px;
+                        img {
+                            width: 100%;
+                            height: 200px;
+                            object-fit: cover;
+                            border-radius: 5px;
+                        }
+
+                        span {
+                            font-size: var(--small-font-size);
+                            font-weight: var(--font-regular);
+                            color: var(--gray-300);
+                            text-transform: capitalize;
+                            text-align: center;
+                        }
                     }
 
-                    span {
-                        font-size: var(--small-font-size);
-                        font-weight: var(--font-regular);
-                        color: var(--gray-300);
-                        text-transform: capitalize;
-                        text-align: center;
-                    }
-                }
+                    .body {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 20px;
+                        color: var(--gray-100);
 
-                .body {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 20px;
-                    color: var(--gray-100);
+                        p {
+                            text-align: center;
+                            font-size: var(--normal-font-size);
+                        }
 
-                    p {
-                        text-align: center;
-                        font-size: var(--normal-font-size);
-                    }
-
-                    span {
-                        text-align: center;
+                        span {
+                            text-align: center;
+                        }
                     }
 
                     button {
@@ -147,7 +211,7 @@
                             color: var(--gray-900);
                         }
                     }
-                }
+
             }
         }
     }
@@ -180,20 +244,43 @@
                 &.founder {
 
                     .content {
-                        gap: 100px;
+                        gap: 0;
 
-                        .image {
+                        .left {
+                            width: 50%;
+                            
+                            .image {
 
-                            img {
-                                height: 250px;
-                                width: 200px;
+                                img {
+                                    height: 250px;
+                                    width: 200px;
+                                }
+                                
+                                span {}
+    
                             }
-
-                            span {}
-
+        
+                            .body {
+                                
+                                p {
+                                }
+                                
+                                span {
+                                }
+                            }
                         }
-
-                        .body {}
+                        
+                        .right {
+                            width: 50%;
+                            align-items: flex-start;
+        
+                            .textContent{
+        
+                                p{
+                                    text-align: left;
+                                }
+                            }
+                        }
                     }
                 }
 
@@ -256,39 +343,32 @@
                 &.founder {
 
                     .content {
-                        flex-direction: column;
-                        gap: 20px;
-                        width: 600px;
 
-                        .image {
+                        .left {
+                            
+                            .image {
 
-                            img {
-                                width: 400px;
-
-                                &.mobile {
-                                    display: none;
-                                }
-
-                                &.desktop {
-                                    display: block;
+                                img {
+                                    width: 400px;
+    
+                                    &.mobile {
+                                        display: none;
+                                    }
+    
+                                    &.desktop {
+                                        display: block;
+                                    }
                                 }
                             }
-
-                            span {}
-
                         }
-
-                        .body {
-                            flex-direction: row;
-                            width: 100%;
-
-                            span {
-                                text-transform: uppercase;
-                                font-size: var(--h2-font-size);
-                            }
-
-                            button {
-                                width: max-content;
+                        
+                        .right {
+        
+                            .textContent{
+        
+                                p{
+                                    max-width: 500px;
+                                }
                             }
                         }
                     }
@@ -328,7 +408,7 @@
                         width: 40%;
 
                         img {
-                            height: 350px;
+                            height: 300px;
                         }
 
                         span {
@@ -339,9 +419,46 @@
                     }
 
                     .body {
+                        width: 40%;
 
                         p {
                             font-size: 1.05rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1244px) {
+        .aboutContainer {
+
+            .aboutInfoItem {
+
+                &.founder {
+
+                    .content {
+                        gap: 20px;
+
+                        .right {
+        
+                            .textContent{
+        
+                                p{
+                                    max-width: 650px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .content {
+
+                    .image {
+                        width: 40%;
+
+                        img {
+                            height: 360px;
                         }
                     }
                 }

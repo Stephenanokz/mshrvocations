@@ -9,7 +9,9 @@ const Carousel = ({ slides }) => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex(currentIndex === slides.length - 1 ? 0 : currentIndex + 1);
+      setCurrentIndex(
+        currentIndex === slides.length - 1 ? 0 : currentIndex + 1
+      );
     }, 8000);
     return () => clearInterval(interval);
   }, [currentIndex, slides]);
@@ -40,13 +42,16 @@ const Carousel = ({ slides }) => {
       >
         <div className="overlay">
           <div className="text">{slides[currentIndex]?.title}</div>
-          <div className="subText">{slides[currentIndex]?.subtitle}</div>
+          <div className="subText">
+            Our community life is characterised by prayer, simplicity and
+            hospitality
+          </div>
           <div>
             <Link to="/about">
               <button className="aboutButton">About us</button>
             </Link>
-            <Link to="/donate">
-              <button className="contactButton">Support</button>
+            <Link to="/vocation">
+              <button className="contactButton">Join us</button>
             </Link>
           </div>
         </div>

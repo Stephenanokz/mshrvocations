@@ -1,50 +1,80 @@
 .vocation {
-    background: linear-gradient(90deg, hsla(0, 0%, 100%, 0.9) 40%, hsla(0, 0%, 100%, 0.9) 100%), url("https://ik.imagekit.io/stephenanokz98/o/imgs%2Fazfsj-08cd4.avif?alt=media&token=9970d321-9854-4ba5-a472-fd4bf1c6b310");
+    background: linear-gradient(90deg, hsla(0, 0%, 100%, 0.96) 40%, hsla(0, 0%, 100%, 0.96) 100%), url("https://ik.imagekit.io/stephenanokz98/o/imgs%2Fazfsj-08cd4.avif?alt=media&token=9970d321-9854-4ba5-a472-fd4bf1c6b310");
     background-blend-mode: luminosity;
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    padding: 50px 0;
+    gap: 30px;
+    padding: 20px 0 30px;
 
     img {
-        width: 100%;
+        width: 90%;
     }
 
-    button {
-        width: max-content;
+    .desc {
         padding: 10px;
-        border-radius: 4px;
-        border: 2px solid transparent;
-        outline: none;
-        background-color: var(--primary-color);
-        color: var(--gray-100);
-        font-size: var(--normal-font-size);
-        cursor: pointer;
-        transition: all .3s ease;
-        text-transform: capitalize;
-        animation: bounce 1s infinite;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-        @keyframes bounce {
-            0% {
-                transform: translateY(0);
-            }
+        .body {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            margin-bottom: 10px;
 
-            50% {
-                transform: translateY(10px);
-            }
+            p {
+                color: var(--gray-900);
+                font-family: var(--sans-family);
+                font-size: var(--h3-font-size);
 
-            100% {
-                transform: translateY(0);
+                a{
+                    color: var(--secondary-color);
+                    transition: all .3s ease;
+
+                    &:hover{
+                        color: var(--secondary-color-dark);
+                    }
+                }
             }
         }
 
-        &:hover {
-            border: 2px solid var(--primary-color);
-            background-color: transparent;
-            color: var(--primary-color);
+        button {
+            width: max-content;
+            padding: 10px;
+            border-radius: 4px;
+            border: 2px solid transparent;
+            outline: none;
+            background-color: var(--primary-color);
+            color: var(--gray-100);
+            font-size: var(--normal-font-size);
+            cursor: pointer;
+            transition: all .3s ease;
+            text-transform: capitalize;
+            animation: bounce 1s infinite;
+
+            @keyframes bounce {
+                0% {
+                    transform: translateY(0);
+                }
+
+                50% {
+                    transform: translateY(10px);
+                }
+
+                100% {
+                    transform: translateY(0);
+                }
+            }
+
+            &:hover {
+                border: 2px solid var(--primary-color);
+                background-color: transparent;
+                color: var(--primary-color);
+            }
         }
     }
 
@@ -61,19 +91,43 @@
         justify-content: space-evenly;
 
         img {
-            width: 500px;
-            margin-left: -100px;
+            width: 50%;
+            ;
+        }
+
+        .desc {
+
+            .body {
+                gap: 30px;
+            }
         }
 
     }
 
     @media screen and (min-width: 1024px) {
+        padding: 20px 80px;
 
-        button {
-            width: 200px;
-            padding: 15px;
-            font-size: var(--h2-font-size);
+        img{
+            width: 500px;
         }
+
+        .desc {
+            gap: 30px;
+
+            .body{
+
+                p{
+                    font-weight: var(--font-semi-bold);
+                }
+            }
+
+            button {
+                width: 200px;
+                padding: 15px;
+                font-size: var(--h2-font-size);
+            }
+        }
+
     }
 
 }

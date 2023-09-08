@@ -31,7 +31,7 @@ const Blog = () => {
     getPosts();
   }, []);
 
-  const filteredPosts = posts.slice(0, 2);
+  const filteredPosts = posts.slice(0, 3);
 
   const truncateString = (string = "", maxLength = 50) =>
     string.length > maxLength ? `${string.substring(0, maxLength)} …` : string;
@@ -52,8 +52,8 @@ const Blog = () => {
             <Link key={post?._id} to={`/blog/${post?._id}`}>
               <div className="blogItem">
                 <img src={post?.imgs[0]} alt={post?.title} />
-                <span className="title">{post?.title}</span>
-                <span className="body">{truncateString(post.body, 200)}</span>
+                <span className="title">{truncateString(post?.title, 30)}</span>
+                <span className="body">{truncateString(post?.body, 180)}</span>
                 <div className="utils">
                   <span className="left">
                     {post.updatedAt.slice(0, 10)} | 3 min read

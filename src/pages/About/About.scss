@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background-color: var(--primary-color);
-    color: var(--gray-100);
+    background-color: var(--gray-100);
+    color: var(--gray-900);
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -39,8 +39,8 @@
                 .rule {
                     height: 3px;
                     width: 100%;
-                    color: var(--gray-100);
-                    background-color: var(--gray-100);
+                    color: var(--gray-900);
+                    background-color: var(--gray-900);
                 }
             }
 
@@ -149,33 +149,13 @@
 
             .left {
 
-                .title {
-
-                    .welcome {}
-
-                    .rule {}
-                }
-
                 .body {
+                    gap: 10px;
 
                     p {
                         text-align: justify;
                     }
-
-                    div {
-
-                        .name {}
-
-                        .title {}
-                    }
-
-                    .aboutMore {}
                 }
-            }
-
-            .right {
-
-                img {}
             }
         }
 
@@ -199,12 +179,11 @@
                         font-size: var(--big-font-size);
                     }
 
-                    .rule {}
                 }
 
                 .body {
                     width: 650px;
-                    gap: 40px;
+                    gap: 20px;
 
                     p {
                         font-size: var(--h3-font-size);
@@ -212,21 +191,12 @@
 
                     }
 
-                    div {
-
-                        .name {}
-
-                        .title {}
-                    }
-
-                    .aboutMore {}
                 }
             }
 
             .right {
                 width: 35%;
 
-                img {}
             }
         }
     }

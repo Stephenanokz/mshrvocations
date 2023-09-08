@@ -54,8 +54,8 @@ const BlogInfo = () => {
               className="blogItem"
             >
               <img src={post?.imgs[0]} alt={post.title} />
-              <span className="title">{post.title}</span>
-              <span className="body">{truncateString(post.body, 200)}</span>
+              <span className="title">{truncateString(post?.title, 30)}</span>
+              <span className="body">{truncateString(post?.body, 200)}</span>
               <div className="utils">
                 <span className="left">
                   {post.createdAt.slice(0, 10)} | 3 min read

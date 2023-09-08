@@ -1,18 +1,68 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./ContactInfo.scss";
 import Banner from "../../components/Banner/Banner";
-import EmailIcon from "@mui/icons-material/Email";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import YouTubeIcon from "@mui/icons-material/YouTube";
-import CallIcon from "@mui/icons-material/Call";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import TikTokIcon from "../../components/TikTokIcon";
+import Accordion from "../../components/Accordion/Accordion";
+import axios from "axios";
+// import EmailIcon from "@mui/icons-material/Email";
+// import TwitterIcon from "@mui/icons-material/Twitter";
+// import FacebookIcon from "@mui/icons-material/Facebook";
+// import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+// import YouTubeIcon from "@mui/icons-material/YouTube";
+// import CallIcon from "@mui/icons-material/Call";
+// import InstagramIcon from "@mui/icons-material/Instagram";
+// import LinkedInIcon from "@mui/icons-material/LinkedIn";
+// import TikTokIcon from "../../components/TikTokIcon";
 // import GeocodeGlobe from "../../components/GeocodeGlobe/GeocodeGlobe";
 
 const ContactInfo = () => {
+  
+  const [faqs, setFaqs] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const axiosInstance = axios.create({
+    baseURL: import.meta.env.VITE_REACT_APP_API_BASEURL,
+  });
+
+  useEffect(() => {
+    const getFaqs = async () => {
+      try {
+        setIsLoading(true);
+        const res = await axiosInstance.get(`faqs`, {
+          headers: {
+            token: `Bearer ${import.meta.env.VITE_REACT_APP_JWT_TOKEN}`,
+          },
+        });
+        setFaqs(res.data);
+      } catch (error) {
+        console.log(error);
+      }
+      setIsLoading(false);
+    };
+    getFaqs();
+  }, []);
+
+  // const faqs = [
+  //   {
+  //     title: "Question 1",
+  //     content:
+  //       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic consectetur ipsam perferendis. Hic laboriosam ex odit soluta officia, debitis, natus aliquid doloremque veniam, repellat earum? Animi voluptate id distinctio obcaecati.",
+  //   },
+  //   {
+  //     title: "Question 2",
+  //     content:
+  //       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic consectetur ipsam perferendis. Hic laboriosam ex odit soluta officia, debitis, natus aliquid doloremque veniam, repellat earum? Animi voluptate id distinctio obcaecati.",
+  //   },
+  //   {
+  //     title: "Question 3",
+  //     content:
+  //       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic consectetur ipsam perferendis. Hic laboriosam ex odit soluta officia, debitis, natus aliquid doloremque veniam, repellat earum? Animi voluptate id distinctio obcaecati.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic consectetur ipsam perferendis. Hic laboriosam ex odit soluta officia, debitis, natus aliquid doloremque veniam, repellat earum? Animi voluptate id distinctio obcaecati. . Hic laboriosam ex odit soluta officia, debitis, natus aliquid doloremque veniam, repellat earum?",
+  //   },
+  //   {
+  //     title: "Question 4",
+  //     content:
+  //       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic consectetur ipsam perferendis. Hic laboriosam ex odit soluta officia, debitis, natus aliquid doloremque veniam, repellat earum? Animi voluptate id distinctio obcaecati. . Hic laboriosam ex odit soluta officia, debitis, natus aliquid doloremque veniam, repellat earum?",
+  //   },
+  // ];
+
   const location = {
     address: "Verbum Networks, Zik Avenue, Enugu",
     lat: 6.42663,
@@ -32,9 +82,13 @@ const ContactInfo = () => {
             <span>We are represented in 14 countries across the globe.</span>
           </div>
           <div className="list">
-            <div data-aos="zoom-in" data-aos-duration="1000" className="clItem africa">
+            <div
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              className="clItem africa"
+            >
               <div>
-                <span>Cameroun</span>
+                <span>Cameroon</span>
                 <span>Ethiopia</span>
                 <span>Ghana</span>
               </div>
@@ -49,17 +103,29 @@ const ContactInfo = () => {
                 <span>Zambia</span>
               </div>
             </div>
-            <div data-aos="zoom-in" data-aos-duration="1000" className="clItem europe">
+            <div
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              className="clItem europe"
+            >
               <span>England</span>
               <span>Ireland</span>
             </div>
-            <div data-aos="zoom-in" data-aos-duration="1000" className="clItem america">
+            <div
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              className="clItem america"
+            >
               <span>Brazil</span>
               <span>Mexico</span>
               <span>The USA</span>
             </div>
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" className="regionContact">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="regionContact"
+          >
             <div className="left">
               <span>
                 <strong>BENUE:</strong>{" "}
@@ -70,7 +136,7 @@ const ContactInfo = () => {
                 <a href="tel:+557598238645">+55 (75) 9823-8645</a>
               </span>
               <span>
-                <strong>CAMEROUN:</strong>{" "}
+                <strong>CAMEROON:</strong>{" "}
                 <a href="tel:+237653521185">+237 6 53 52 11 85</a>
               </span>
               <span>
@@ -106,20 +172,30 @@ const ContactInfo = () => {
             </div>
           </div>
         </div>
-        <h2 data-aos="fade-down" data-aos-duration="1000" >Our Contact Handles</h2>
-        <div className="contactList">
-          <div data-aos="fade-up" data-aos-duration="1000" className="contactItem">
+        {/* <h2 data-aos="fade-down" data-aos-duration="1000">
+          Our Contact Handles
+        </h2> */}
+        {/* <div className="contactList">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="contactItem"
+          >
             <EmailIcon className="contactIcon" />
             <h3>Email</h3>
             <span>
               You can send a mail to our 24/7 support team and you will get a
               feedback from us.
             </span>
-            <a href="mailto:mshrvocations@yahoo.com?subject = Feedback&body = Message">
+            <a href="mailto:holyrosaryvocations99@gmail.com?subject = Feedback&body = Message">
               <button>Send mail</button>
             </a>
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" className="contactItem">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="contactItem"
+          >
             <TwitterIcon className="contactIcon" />
             <h3>Twitter</h3>
             <span>
@@ -134,7 +210,11 @@ const ContactInfo = () => {
               <button>Tweet</button>
             </a>
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" className="contactItem">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="contactItem"
+          >
             <FacebookIcon className="contactIcon" />
             <h3>Facebook</h3>
             <span>
@@ -151,7 +231,11 @@ const ContactInfo = () => {
               <button>View Profile</button>
             </a>
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" className="contactItem">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="contactItem"
+          >
             <WhatsAppIcon className="contactIcon" />
             <h3>WhatsApp</h3>
             <span>
@@ -161,7 +245,11 @@ const ContactInfo = () => {
               <button>Chat</button>
             </a>
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" className="contactItem">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="contactItem"
+          >
             <InstagramIcon className="contactIcon" />
             <h3>Instagram</h3>
             <span>
@@ -175,7 +263,11 @@ const ContactInfo = () => {
               <button>View IG Page</button>
             </a>
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" className="contactItem">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="contactItem"
+          >
             <TikTokIcon color="white" className="contactIcon" />
             <h3>TikTok</h3>
             <span>Follow us, Watch and share our amazing contents .</span>
@@ -183,7 +275,11 @@ const ContactInfo = () => {
               <button>Go to Profile</button>
             </a>
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" className="contactItem">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="contactItem"
+          >
             <LinkedInIcon className="contactIcon" />
             <h3>LinkedIn</h3>
             <span>Be sure to connect with us via our Linkedin profile.</span>
@@ -194,7 +290,11 @@ const ContactInfo = () => {
               <button>Go to Profile</button>
             </a>
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" className="contactItem">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="contactItem"
+          >
             <YouTubeIcon className="contactIcon" />
             <h3>YouTube</h3>
             <span>
@@ -208,7 +308,11 @@ const ContactInfo = () => {
               <button>Visit Channel</button>
             </a>
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" className="contactItem phone">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="contactItem phone"
+          >
             <CallIcon className="contactIcon" />
             <h3>Telephone</h3>
             <span>
@@ -219,8 +323,9 @@ const ContactInfo = () => {
               <a href="tel:+2347037102113">+234 703 710 2113</a> <br />{" "}
             </span>
           </div>
-        </div>
+        </div> */}
         {/* <GeocodeGlobe /> */}
+        <Accordion sections={faqs} />
         <div data-aos="fade-up" data-aos-duration="1000" className="form">
           <form className="contactForm">
             <h2 className="contactFormTitle">Get in touch</h2>

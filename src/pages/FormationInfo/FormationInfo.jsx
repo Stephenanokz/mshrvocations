@@ -7,7 +7,7 @@ const FormationInfo = () => {
     <div className="FormationInfo">
       <Banner
         title="Formation"
-        subTitle='Then I heard the voice of the Lord saying, "whom shall I send? And who will go for us?" Isiah 6:8'
+        subTitle='Then I heard the voice of the Lord saying, "whom shall I send? And who will go for us?" Isaiah 6:8'
       />
       <div className="formationContainer">
         <div data-aos="fade-down" data-aos-duration="1000" className="title">
@@ -43,7 +43,7 @@ const FormationInfo = () => {
                 src="https://ik.imagekit.io/stephenanokz98/o/imgs%2Fasnox-4ftiw.avif?alt=media&token=3fa61183-78d1-4aa6-bc38-452adce994a3"
                 alt="pre-candidacy"
               />
-              <p>
+              <p className="ralign">
                 This period provides opportunity for serious discernment and it
                 lasts for one year. The person must either be working or
                 studying while visiting our convent last weekend of every month
@@ -74,10 +74,10 @@ const FormationInfo = () => {
             </div>
             <div className="stageBody even">
               <img
-                src="https://ik.imagekit.io/stephenanokz98/o/imgs%2Fawntv-ufcmp.avif?alt=media&token=e3af8b35-f153-4cf1-ae3a-7f35212b8f4b"
+                src="https://ik.imagekit.io/stephenanokz98/o/imgs%2F14CCC.JPG?alt=media&token=6e085768-4fb2-425a-b88c-23f1b67e1767"
                 alt="novitiate"
               />
-              <p>
+              <p className="ralign">
                 This is two years of intense formation on prayers, study,
                 community living and apostolate, sharing in the daily life and
                 work of the Sisters, all is done in view of making the First
@@ -95,8 +95,11 @@ const FormationInfo = () => {
                 alt="first profession"
               />
               <p>
-                This is made between five and nine years of first profession
-                when one has gained experience of missionary religious life.
+                Vows of poverty, consecrated celibacy and obedience admits a
+                person to the life and work of the congregation. The Sister
+                continues to serve God’s people in different apostolates, living
+                with other Sisters in community while deepening her personal
+                relationship with God.
               </p>
             </div>
           </div>
@@ -106,15 +109,12 @@ const FormationInfo = () => {
             </div>
             <div className="stageBody even">
               <img
-                src="https://ik.imagekit.io/stephenanokz98/o/imgs%2Fabyb8-ehqki.avif?alt=media&token=960e70c3-b678-4810-b4a6-8ad9e2824401"
+                src="https://ik.imagekit.io/stephenanokz98/o/imgs%2Ffinal%20profession.jpeg?alt=media&token=11b312fc-9d72-404f-9604-df4d49b3a599"
                 alt="final profession"
               />
-              <p>
-                Vows of poverty, consecrated celibacy and obedience admits a
-                person to the life and work of the congregation. The Sister
-                continues to serve God’s people in different apostolates, living
-                with other Sisters in community while deepening her personal
-                relationship with God.
+              <p className="ralign">
+                This is made between five and nine years of first profession
+                when one has gained experience of missionary religious life.
               </p>
             </div>
           </div>

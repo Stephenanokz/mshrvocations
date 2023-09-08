@@ -1,12 +1,14 @@
 import React from "react";
 import "./AboutInfo.scss";
 import Banner from "../../components/Banner/Banner";
+import About from "../About/About";
 import { Link } from "react-router-dom";
 
 const AboutInfo = () => {
   return (
     <div className="AboutInfo">
       <Banner title="About Us" subTitle="Learn Much More About us" />
+      <About />
       <div className="aboutContainer">
         <div
           data-aos="fade-up"
@@ -17,20 +19,38 @@ const AboutInfo = () => {
             <span>Our Founder</span>
           </div>
           <div className="content">
-            <div className="image">
-              <img
-                src="https://ik.imagekit.io/stephenanokz98/o/imgs%2Fav7vq-rmio9.avif?alt=media&token=5d3c996e-2b9a-4452-9d55-288ba122aa3d"
-                alt=""
-                className="mobile"
-              />
-              <img
-                src="https://ik.imagekit.io/stephenanokz98/o/imgs%2Fa268y-ppobi.avif?alt=media&token=44c88571-ac90-4b60-a2a5-131ea84210ff"
-                alt=""
-                className="desktop"
-              />
+            <div className="left">
+              <div className="image">
+                <img
+                  src="https://ik.imagekit.io/stephenanokz98/o/imgs%2Fav7vq-rmio9.avif?alt=media&token=5d3c996e-2b9a-4452-9d55-288ba122aa3d"
+                  alt=""
+                  className="mobile"
+                />
+                <img
+                  src="https://ik.imagekit.io/stephenanokz98/o/imgs%2Fa268y-ppobi.avif?alt=media&token=44c88571-ac90-4b60-a2a5-131ea84210ff"
+                  alt=""
+                  className="desktop"
+                />
+              </div>
+              <div className="body">
+                <span>Bishop Joseph Shanahan, C.S.Sp</span>
+              </div>
             </div>
-            <div className="body">
-              <span>Bishop Joseph Shanahan</span>
+            <div className="right">
+              <div className="textContent">
+                <p>
+                  Joseph Shanahan B.Sc., C.S.Sp. (1871–1943) was an Irish-born
+                  priest of the Congregation of the Holy Spirit (Spiritans), who
+                  served as a bishop in Nigeria – first as prefect apostolic of
+                  Lower Niger (now Onitsha) and then as vicar apostolic of
+                  Southern Nigeria.
+                </p>
+                <p>
+                  In 1924 Bishop Shanahan founded a missionary society for
+                  women, the Missionary Sisters of the Holy Rosary, in
+                  Killeshandra, County Cavan, Ireland...
+                </p>
+              </div>
               <Link to="/about/founder">
                 <button>More About Our Founder</button>
               </Link>
@@ -110,10 +130,10 @@ const AboutInfo = () => {
           <div className="content">
             <div className="image">
               <img
-                src="https://ik.imagekit.io/stephenanokz98/o/imgs%2Fax0ch-vi6gl.avif?alt=media&token=25a977e0-1dbe-4573-b6e7-58d63a99068d"
+                src="https://ik.imagekit.io/stephenanokz98/o/imgs%2F14CCC.JPG?alt=media&token=6e085768-4fb2-425a-b88c-23f1b67e1767"
                 alt=""
               />
-              <span>One of our sisters with some young ladies</span>
+              <span>Some of our young sisters</span>
             </div>
             <div className="body">
               <p>

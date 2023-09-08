@@ -8,7 +8,7 @@ const Contact = () => {
       <div data-aos="fade-down" data-aos-duration="1000" className="contactTitle">
         <span className="title">Contact Us</span>
         <span className="subTitle">
-          For enquiries and more information about us, please reach out to us
+          For enquiries and more information about vocation, please reach out to us
         </span>
       </div>
       <div data-aos="fade-up" data-aos-duration="1000" className="form">
