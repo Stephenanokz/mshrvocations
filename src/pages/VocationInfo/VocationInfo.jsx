@@ -40,7 +40,7 @@ const VocationInfo = () => {
         <div className="top">
           <div data-aos="fade-up" data-aos-duration="1000" className="info">
             <img
-              src="https://ik.imagekit.io/stephenanokz98/o/imgs%2Fafnku-x1g5b.avif?alt=media&token=cadbbc69-b557-4884-a027-1791b304ecbb"
+              src="https://ik.imagekit.io/stephenanokz98/o/imgs%2Fagy8f-hwrsc.avif?alt=media&token=22fddb3c-b9d2-4429-8502-889eb8935c2b"
               alt=""
             />
             <p>
