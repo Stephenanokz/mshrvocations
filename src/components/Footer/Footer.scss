@@ -90,7 +90,7 @@ marquee {
             .featItem {
                 width: 40%;
                 display: flex;
-                justify-content: center;
+                // justify-content: center;
                 align-items: center;
                 gap: 10px;
                 width: 40%;
@@ -101,6 +101,7 @@ marquee {
 
                 a {
                     max-width: 150px;
+                    font-size: var(--small-font-size);
                 }
             }
         }
@@ -170,6 +171,7 @@ marquee {
                     font-size: var(--h3-font-size);
                     font-family: var(--serif-family);
                     font-weight: var(--font-semi-bold);
+                    text-align: center;
                 }
 
                 img {
@@ -291,8 +293,12 @@ marquee {
             .featured{
                 width: 100%;
                 flex-direction: row;
-                flex-wrap: nowrap;
+                flex-wrap: wrap;
                 justify-content: center;
+
+                .featItem{
+                    width: 30%;
+                }
             }
 
             .support {
@@ -327,10 +333,10 @@ marquee {
         .top {
 
             .featured{
-                gap: 0;
+                gap: 12px;
+                row-gap: 24px;
 
                 .featItem{
-
                     a{
                         max-width: 200px;
                     }
@@ -357,6 +363,15 @@ marquee {
             .copyright {
                 flex-direction: row;
                 gap: 10%;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1244px) {
+        .top {
+
+            .featured{
+                flex-wrap: nowrap;
             }
         }
     }

@@ -122,6 +122,15 @@ const Footer = () => {
             </div>
             <div className="featItem">
               <img
+                src="https://ik.imagekit.io/stephenanokz98/o/imgs%2F0C486E05-C51D-4252-AE14-EF724144D32C.png?alt=media&token=d0dd24e7-96a0-4b30-b8a9-88bb0207d7e3&_gl=1*1xhkusx*_ga*MTQ2ODI0NTE2MC4xNjY2NjE0NjY3*_ga_CW55HF8NVT*MTY5Njk0MjE3Ni40NC4xLjE2OTY5NDIzODkuMTIuMC4w"
+                alt=""
+              />
+              <a target="_blank" href="https://www.naechstenliebe-weltweit.org/">
+              NÄCHSTENLIEBE WELTWEIT
+              </a>
+            </div>
+            <div className="featItem">
+              <img
                 src="https://ik.imagekit.io/stephenanokz98/o/imgs%2Fvatican.png?alt=media&token=cf1b7c67-8576-40fa-8838-200cf30719ae"
                 alt=""
               />
@@ -220,7 +229,7 @@ const Footer = () => {
           </div>
           <div className="copyright">
             <span>
-              <a href="https://mshrvocationsadmin.onrender.com/">©</a> 2023
+              <a href="https://mshrvocationsadmin.onrender.com/" target="_blank">©</a> 2023
               Sisters of the Holy Rosary Province of Nigeria
             </span>
             <span>Developed by Verbum Networks, Enugu.</span>

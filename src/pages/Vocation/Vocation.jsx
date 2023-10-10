@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Vocation = () => {
   return (
     <div data-aos="fade-up" data-aos-duration="1000" className="vocation">
-      <img src="/img/baba j.png" alt="" />
+      <img src="https://ik.imagekit.io/stephenanokz98/o/imgs%2Fbaba%20j.png?alt=media&token=8a85b629-ac3e-43fe-a4e1-551c4410cac9&_gl=1*1c61pcy*_ga*MTQ2ODI0NTE2MC4xNjY2NjE0NjY3*_ga_CW55HF8NVT*MTY5Njk0MjE3Ni40NC4xLjE2OTY5NDI2MDcuMzMuMC4w" alt="" />
       <div className="desc">
         <div className="body">
           <p>
