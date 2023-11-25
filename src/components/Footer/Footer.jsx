@@ -229,7 +229,7 @@ const Footer = () => {
           </div>
           <div className="copyright">
             <span>
-              <a href="https://mshrvocationsadmin.onrender.com/" target="_blank">©</a> 2023
+              <a href="https://admin.mshrvocations.org/" target="_blank">©</a> 2023
               Sisters of the Holy Rosary Province of Nigeria
             </span>
             <span>Developed by Verbum Networks, Enugu.</span>
